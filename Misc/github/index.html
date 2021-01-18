@@ -776,6 +776,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#then-next-time-you-enter-your-credentials-it-will-store-them-on-your-hard-disk" class="md-nav__link">
+    Then next time you enter your credentials it will store them on your hard disk.
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1535,6 +1542,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#then-next-time-you-enter-your-credentials-it-will-store-them-on-your-hard-disk" class="md-nav__link">
+    Then next time you enter your credentials it will store them on your hard disk.
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1552,21 +1566,31 @@
                 
                 <h3 id="basic-github-usage">Basic Github usage</h3>
 <hr />
+<p><strong>Configure Git</strong></p>
+<pre><code> git config –global user.name “Terry E. Dutcher”
+ git config –global user.email “terryinclmich@hotmail.com”
+</code></pre>
+<p>This is only used to track who made what changes. It doesn’t log you in anywhere.</p>
+<p><strong>Repositories</strong></p>
+<p>To create a local repository run <strong>git init</strong></p>
+<p>At any time you can use <strong>git status</strong> to see the current condition of the repository.</p>
+<p>To add files to staging area use <strong>git add filename(s)</strong> To add all new and changed files to the staging area use <strong>git add .</strong></p>
+<p>Then commit the changes <strong>git commit -m “Commit Message”</strong>. Commit messages are important in case you need to revert to a previous version of your project.</p>
 <p>Clone a repository:</p>
-<pre><code>git clone https://github.com/terryinfcco/terryinfcco.github.io
-</code></pre>
+<p><strong>git clone https://github.com/terryinfcco/terryinfcco.github.io</strong></p>
 <p>Get updates to an existing repository. You'll get messages of what (if anything) has changed.</p>
-<pre><code>git pull origin master
-</code></pre>
-<p>To see what you've changed locally:</p>
-<pre><code>git status
-</code></pre>
+<p><strong>git pull origin main</strong> (or current branch)</p>
+<p>To see a history of commits use <strong>git log</strong>. This will give you author, date and a commit hash for each commit.</p>
+<p>To go back to a previous revision do <strong>git checkout hash</strong>. That will create a branch called (HEAD detached at hash). To go back to the master branch do <strong>git checkout master</strong></p>
+<p>To start a new branch do <strong>git branch newbranchname</strong>. At this point both branches match. After you’ve made changes to the new branch, if you like the new stuff from the new branch switch back to the master branch <strong>git checkout master</strong>, then do <strong>git merge newbranchname</strong>.</p>
 <p>After Making Changes:</p>
-<pre><code>git add *
+<pre><code>git add .
 git commit -m "Commit message"
-git push origin master
+git push origin main   (main might be master in older repos)
 </code></pre>
-<hr />
+<p>To get credentials saved on a computer run:</p>
+<p><strong>git config credential.helper store</strong></p>
+<h2 id="then-next-time-you-enter-your-credentials-it-will-store-them-on-your-hard-disk">Then next time you enter your credentials it will store them on your hard disk.</h2>
                 
               
               
