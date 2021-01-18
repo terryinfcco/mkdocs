@@ -1,6 +1,5 @@
 ### Basic Github usage
 
-----
 
 **Configure Git**
 
@@ -45,4 +44,4 @@ To get credentials saved on a computer run:
 **git config credential.helper store**
   
 Then next time you enter your credentials it will store them on your hard disk.    
-----
+
