@@ -1564,25 +1564,26 @@
                 
                 <h2 id="python-loops">Python Loops</h2>
 <p>While loops are like if statements, you do something while a condition is true</p>
-<pre><code class="language-python">counter = 0
-while (counter &lt; 10):
-    print (&quot;The count is: %s&quot; % counter)
-    counter +=1
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;The count is: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">counter</span><span class="p">)</span>
+    <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
+</code></pre></div>
+
 <p>For Loops loop through something like a string, a list, or a dictionary.</p>
-<pre><code class="language-python">name = &quot;John&quot;
-for x in name:
-    print (x)  # prints J then o then h then n
+<div class="codehilite"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># prints J then o then h then n</span>
 
-fav_pizza = {
-    &quot;John&quot;: &quot;Pepperoni&quot;,
-    &quot;Bob&quot;: &quot;Cheese&quot;,
-    &quot;Tina&quot;: &quot;Supreme&quot;
-}
+<span class="n">fav_pizza</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;John&quot;</span><span class="p">:</span> <span class="s2">&quot;Pepperoni&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Bob&quot;</span><span class="p">:</span> <span class="s2">&quot;Cheese&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Tina&quot;</span><span class="p">:</span> <span class="s2">&quot;Supreme&quot;</span>
+<span class="p">}</span>
 
-for key, value in fav_pizza.items():
-    print(key, value) # will go through the dictionary using the items function. Variables could be anything like name, style.
-</code></pre>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">fav_pizza</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="c1"># will go through the dictionary using the items function. Variables could be anything like name, style.</span>
+</code></pre></div>
                 
               
               
