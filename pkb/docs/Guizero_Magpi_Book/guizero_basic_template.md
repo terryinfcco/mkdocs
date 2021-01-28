@@ -1,5 +1,6 @@
 ## GUIZero Basic Template
 
+``` python
     # import each widget you're going to use separately
     from guizero import App
     
@@ -9,7 +10,7 @@
     
     # window_name.display() is the way you do the event loop
     app.display()
-    
+```    
     
 
 

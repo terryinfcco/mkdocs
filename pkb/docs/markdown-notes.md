@@ -1,5 +1,6 @@
 ## Sections ##
 
+* [Code Blocks](#Code_Blocks)
 * [Headers](#headers)
 * [Quotes](#Quotes)
 * [Emphasis](#Emphasis)
@@ -9,6 +10,9 @@
     * [Ordered Lists](Ordered)
 
 
+## Code_Blocks
+
+To get code highlighting enclose the code in triple backticks, and the first set of triple backticks should be followed by a space and then the language (like python).
 
 ## Headers
 

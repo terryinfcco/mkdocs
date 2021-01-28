@@ -1,5 +1,6 @@
 ## Push Button
 
+``` python
 	from guizero import PushButton
 	
     # Create a button in container app,
@@ -18,4 +19,4 @@
 	button.text_color = "white"
 	
 	app.display()
-	
+```
