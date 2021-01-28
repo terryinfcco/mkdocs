@@ -1563,21 +1563,21 @@
                   <h1>Text box</h1>
                 
                 <h2 id="text-box">Text Box</h2>
-<div class="highlight"><pre><span></span><code>from guizero import App, Text
-app = App(title = &quot;Hello World&quot;)
+<div class="highlight"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">guizero</span> <span class="kn">import</span> <span class="n">App</span><span class="p">,</span> <span class="n">Text</span>
+    <span class="n">app</span> <span class="o">=</span> <span class="n">App</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
 
-# Now put a line of text in window &quot;app&quot;
-message = Text(app, text = &quot;Welcome to the app&quot;)
+    <span class="c1"># Now put a line of text in window &quot;app&quot;</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Welcome to the app&quot;</span><span class="p">)</span>
 
-app.display()
+    <span class="n">app</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
 </code></pre></div>
 <p>Properties:</p>
-<div class="highlight"><pre><span></span><code># Change Text Size:
-message.text_size = 50
-# Change Font
-message.font = &quot;Times New Roman&quot;
-# Change Text Color
-message.text_color = &quot;white&quot;
+<div class="highlight"><pre><span></span><code>    <span class="c1"># Change Text Size:</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">text_size</span> <span class="o">=</span> <span class="mi">50</span>
+    <span class="c1"># Change Font</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="s2">&quot;Times New Roman&quot;</span>
+    <span class="c1"># Change Text Color</span>
+    <span class="n">message</span><span class="o">.</span><span class="n">text_color</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span>
 </code></pre></div>
                 
               
