@@ -1567,43 +1567,37 @@
 <p><strong>Single and Double Quotes</strong></p>
 <p>Can use either single or double quotes, but you need to be consistent within the same line. Good style says you should be consistent within your program.</p>
 <p>if you want to use one or the other in the string you have to use the opposite one to delineate the string:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">print (&quot;I can&#39;t do this with all single quotes&quot;)</span>
+<div class="highlight"><pre><span></span><code>print (&quot;I can&#39;t do this with all single quotes&quot;)
 </code></pre></div>
-
 <p><strong>Escape Sequences</strong></p>
 <p>All start with backslashes. e.g. \n - newline, \ - backslash, \' - single quote, \" - double quote.</p>
 <p>Strings are indexed.</p>
-<div class="codehilite"><pre><span></span><code><span class="err">a = &quot;hello&quot;</span>
-<span class="err">a[0] ==&gt; h</span>
-<span class="err">a[4] ==&gt; o</span>
+<div class="highlight"><pre><span></span><code>a = &quot;hello&quot;
+a[0] ==&gt; h
+a[4] ==&gt; o
 </code></pre></div>
-
 <p>reverse indexing:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">a[-1] ==&gt; o</span>
-<span class="err">a[-4] ==&gt; e</span>
+<div class="highlight"><pre><span></span><code>a[-1] ==&gt; o
+a[-4] ==&gt; e
 </code></pre></div>
-
 <p>slices:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">a[0:2] ==&gt; he  --note that the result goes up to but doesn&#39;t include the final index</span>
-<span class="err">alpha = &#39;abcdef&#39;</span>
-<span class="err">a[2:4] ==&gt; cd</span>
-<span class="err">a[2:] ==&gt; cdef</span>
+<div class="highlight"><pre><span></span><code>a[0:2] ==&gt; he  --note that the result goes up to but doesn&#39;t include the final index
+alpha = &#39;abcdef&#39;
+a[2:4] ==&gt; cd
+a[2:] ==&gt; cdef
 </code></pre></div>
-
 <p>methods:
  change the variable itself. Some change the variable, others have to be assigned to a variable</p>
-<div class="codehilite"><pre><span></span><code><span class="err">basic = &quot;Hello World&quot;</span>
-<span class="err">upper_basic = basic.upper()  ==&gt; HELLO WORLD</span>
-<span class="err">basic.split() ==&gt; returns list of all words separated by spaces</span>
-<span class="err">basic.split(&#39;a&#39;) ==&gt; splits on a&#39;s not on spaces.</span>
+<div class="highlight"><pre><span></span><code>basic = &quot;Hello World&quot;
+upper_basic = basic.upper()  ==&gt; HELLO WORLD
+basic.split() ==&gt; returns list of all words separated by spaces
+basic.split(&#39;a&#39;) ==&gt; splits on a&#39;s not on spaces.
 </code></pre></div>
-
 <p>formatted printing:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">user_name = &#39;Recruit&#39;</span>
-<span class="err">action = &#39;run&#39;</span>
-<span class="err">print(&#39;The {} needs to {}&#39;.format(user_name,action)) ==&gt; The Recruit needs to run</span>
+<div class="highlight"><pre><span></span><code>user_name = &#39;Recruit&#39;
+action = &#39;run&#39;
+print(&#39;The {} needs to {}&#39;.format(user_name,action)) ==&gt; The Recruit needs to run
 </code></pre></div>
-
 <hr />
                 
               

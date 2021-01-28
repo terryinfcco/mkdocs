@@ -1564,19 +1564,18 @@
                 
                 <h2 id="python-string-formatting">Python String Formatting</h2>
 <p>F-Strings (python 3.6+) used by python to interpolate values.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">guess</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="n">print</span> <span class="p">(</span><span class="n">f</span><span class="ss">&quot;your guess of {guess} was incorrect!&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>guess = 8
+print (f&quot;your guess of {guess} was incorrect!&quot;)
 
-<span class="n">name</span> <span class="o">=</span> <span class="ss">&quot;bluethecat&quot;</span>
-<span class="n">print</span><span class="p">(</span><span class="n">f</span><span class="ss">&quot;Nice try, {name} but your guess of {guess} is wrong!&quot;</span><span class="p">)</span>
+name = &quot;bluethecat&quot;
+print(f&quot;Nice try, {name} but your guess of {guess} is wrong!&quot;)
 </code></pre></div>
-
 <p>Old ways:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">formatted</span> <span class="o">=</span> <span class="ss">&quot;I&#39;ve told you {} times already!&quot;</span><span class="p">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>x = 10
+formatted = &quot;I&#39;ve told you {} times already!&quot;.format(x)
 
-<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">formatted</span> <span class="o">=</span> <span class="ss">&quot;I&#39;ve told you %d times already!&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+x = 10
+formatted = &quot;I&#39;ve told you %d times already!&quot; % (x)
 </code></pre></div>
                 
               

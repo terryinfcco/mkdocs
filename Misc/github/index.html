@@ -1564,10 +1564,9 @@
                 
                 <h3 id="basic-github-usage">Basic Github usage</h3>
 <p><strong>Configure Git</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="err"> git config –global user.name “Terry E. Dutcher”</span>
-<span class="err"> git config –global user.email “terryinclmich@hotmail.com”</span>
+<div class="highlight"><pre><span></span><code> git config –global user.name “Terry E. Dutcher”
+ git config –global user.email “terryinclmich@hotmail.com”
 </code></pre></div>
-
 <p>This is only used to track who made what changes. It doesn’t log you in anywhere.</p>
 <p><strong>Repositories</strong></p>
 <p>To create a local repository run <strong>git init</strong></p>
@@ -1582,11 +1581,10 @@
 <p>To go back to a previous revision do <strong>git checkout hash</strong>. That will create a branch called (HEAD detached at hash). To go back to the master branch do <strong>git checkout master</strong></p>
 <p>To start a new branch do <strong>git branch newbranchname</strong>. At this point both branches match. After you’ve made changes to the new branch, if you like the new stuff from the new branch switch back to the master branch <strong>git checkout master</strong>, then do <strong>git merge newbranchname</strong>.</p>
 <p>After Making Changes:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">git add .</span>
-<span class="err">git commit -m &quot;Commit message&quot;</span>
-<span class="err">git push origin main   (main might be master in older repos)</span>
+<div class="highlight"><pre><span></span><code>git add .
+git commit -m &quot;Commit message&quot;
+git push origin main   (main might be master in older repos)
 </code></pre></div>
-
 <p>To get credentials saved on a computer run:</p>
 <p><strong>git config credential.helper store</strong></p>
 <p>Then next time you enter your credentials it will store them on your hard disk.    </p>

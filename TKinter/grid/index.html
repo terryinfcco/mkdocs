@@ -1564,14 +1564,13 @@
                 
                 <h2 id="tkinter-grid-system">Tkinter Grid System</h2>
 <p>Typical grid - rows and columns. Both are numbered from zero. </p>
-<div class="codehilite"><pre><span></span><code><span class="o">#</span> <span class="k">Create</span> <span class="n">two</span> <span class="n">label</span> <span class="n">widgets</span>
-<span class="n">myLabel1</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="nb">text</span><span class="o">=</span><span class="ss">&quot;Line 1&quot;</span><span class="p">)</span>
-<span class="n">myLabel2</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="nb">text</span><span class="o">=</span><span class="ss">&quot;Line 2&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code># Create two label widgets
+myLabel1 = tk.Label(root, text=&quot;Line 1&quot;)
+myLabel2 = tk.Label(root, text=&quot;Line 2&quot;)
 
-<span class="n">myLabel1</span><span class="p">.</span><span class="n">grid</span><span class="p">(</span><span class="k">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">myLabel2</span><span class="p">.</span><span class="n">grid</span><span class="p">(</span><span class="k">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="k">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+myLabel1.grid(row=0, column=0)
+myLabel2.grid(row=1, column=0)
 </code></pre></div>
-
 <p>The rows and columns are relative to each other if you put myLabel2 into column 1 or column 5 it's in the column next to column 0. Tkinter just ignores empty columns or rows.</p>
                 
               
