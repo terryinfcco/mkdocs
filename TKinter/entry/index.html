@@ -2167,11 +2167,47 @@
                   <h1>Entry</h1>
                 
                 <h2 id="tkinter-entry-widget">Tkinter Entry Widget</h2>
-<p>Allows user to enter data. </p>
-<div class="highlight"><pre><span></span><code>e = tk.Entry(root, width=50)
-e.delete(0, END) # Clears the box
-e.insert(0, &quot;Enter Your Data&quot;)  # Puts default data in the entry box, 0 he didn&#39;t explain
-text_from_entry = e.get()
+<p><strong>Codemy.com Youtube Video 4</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Import all of tkinter</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create root window - Main window of your applicaton usually called root, but</span>
+<span class="c1"># doesn&#39;t have to be. Has to be first in program.</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+
+<span class="c1"># Create an entry widiget and call it e</span>
+<span class="c1"># width is the size of the input box in characters. Can change the borderwidth on</span>
+<span class="c1"># all of these widgets.</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">borderwidth</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Can put default text in the box (it&#39;s box 0, I assume we&#39;ll get to that later)</span>
+<span class="c1"># You have to clear the text before typing.</span>
+<span class="n">e</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Enter Your Name:&quot;</span><span class="p">)</span>
+<span class="n">e</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="c1"># Create a button. Need a function that the button calls first.</span>
+
+<span class="k">def</span> <span class="nf">myClick</span><span class="p">():</span>
+<span class="c1"># e.get gets whatever character the entry box contains</span>
+<span class="c1">#     myLabel = Label(root, text=&quot;Hello &quot; + e.get())</span>
+<span class="c1"># Or you can put the contents of the entry box in a variable</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+    <span class="n">myLabel</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">myLabel</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">myButton</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Enter Your Name&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">myClick</span><span class="p">)</span>
+<span class="n">myButton</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+
+<span class="c1"># Create event loop</span>
+<span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Previous Notes</strong>
+Allows user to enter data. </p>
+<div class="highlight"><pre><span></span><code>    <span class="n">e</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">END</span><span class="p">)</span> <span class="c1"># Clears the box</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Enter Your Data&quot;</span><span class="p">)</span>  <span class="c1"># Puts default data in the entry box, 0 he didn&#39;t explain</span>
+    <span class="n">text_from_entry</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
 </code></pre></div>
                 
               
