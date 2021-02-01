@@ -2167,7 +2167,42 @@
                   <h1>Button</h1>
                 
                 <h2 id="buttons-in-tkinter">Buttons in Tkinter</h2>
-<p>Normal format root is the container where you want the button, text is what is displayed
+<p><strong>Codemy.com Youtube Video 3</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Import all of tkinter</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create root window - Main window of your applicaton usually called root, but</span>
+<span class="c1"># doesn&#39;t have to be. Has to be first in program.</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+
+<span class="c1"># Create a button. Need a function that the button calls first.</span>
+
+<span class="k">def</span> <span class="nf">myClick</span><span class="p">():</span>
+    <span class="n">myLabel</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;You clicked the Button!!&quot;</span><span class="p">)</span>
+    <span class="n">myLabel</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="c1"># Use command= to call a function. Notice that there are no parentheses</span>
+<span class="c1"># for parameters.</span>
+<span class="c1"># myButton = Button(root, text=&quot;Click Me!&quot;, command=myClick)</span>
+
+<span class="c1"># Change the foreground color with fg and background color with bg</span>
+<span class="c1"># Can also use hex codes bg=&quot;#ffffff&quot; or fg=&quot;#000000&quot;</span>
+<span class="n">myButton</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Click Me!&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">myClick</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+
+<span class="c1"># Add padding which is inside the button borders</span>
+<span class="c1"># myButton = Button(root, text=&quot;Click Me!&quot;, padx=50, pady=50)</span>
+
+<span class="c1"># if you want the button grayed out so it can&#39;t be clicked:</span>
+<span class="c1"># myButton = Button(root, text=&quot;Click Me!&quot;, state=DISABLED)</span>
+
+<span class="n">myButton</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+
+<span class="c1"># Create event loop</span>
+<span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Older Notes</strong>
+Normal format root is the container where you want the button, text is what is displayed
 on the button, command points to the function that needs to be executed when the button is
 clicked.</p>
 <div class="highlight"><pre><span></span><code>myButton = tk.Button(root, text=&quot;Click Me!&quot;, command = myClick)

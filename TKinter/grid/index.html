@@ -2167,13 +2167,42 @@
                   <h1>Grid</h1>
                 
                 <h2 id="tkinter-grid-system">Tkinter Grid System</h2>
-<p>Typical grid - rows and columns. Both are numbered from zero. </p>
-<div class="highlight"><pre><span></span><code># Create two label widgets
-myLabel1 = tk.Label(root, text=&quot;Line 1&quot;)
-myLabel2 = tk.Label(root, text=&quot;Line 2&quot;)
+<p><strong>Codemy.com Youtube Video 2</strong></p>
+<p><div class="highlight"><pre><span></span><code><span class="c1"># Import all of tkinter</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
 
-myLabel1.grid(row=0, column=0)
-myLabel2.grid(row=1, column=0)
+<span class="c1"># Create root window - Main window of your applicaton usually called root, but</span>
+<span class="c1"># doesn&#39;t have to be. Has to be first in program.</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+
+<span class="c1"># Create 2 label widgets</span>
+<span class="n">myLabel1</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+<span class="n">myLabel2</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;My Name is Terry&quot;</span><span class="p">)</span>
+
+<span class="c1"># First put it into the window in a grid one on top of the other.</span>
+<span class="n">myLabel1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># myLabel2.grid(row=1, column=0)</span>
+
+<span class="c1"># Now try Label2 in column 1</span>
+<span class="c1"># myLabel2.grid(row=1, column=1)</span>
+
+<span class="c1"># Now put Label2 in column 5 and notice that nothing changes</span>
+<span class="c1"># Columns are relative to each other and since columns 1-4 don&#39;t exist</span>
+<span class="c1"># Tkinter ignores them.</span>
+<span class="n">myLabel2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+
+<span class="c1"># Create event loop</span>
+<span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</code></pre></div>
+<strong> Older Notes</strong></p>
+<p>Typical grid - rows and columns. Both are numbered from zero. </p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># Create two label widgets</span>
+    <span class="n">myLabel1</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Line 1&quot;</span><span class="p">)</span>
+    <span class="n">myLabel2</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Line 2&quot;</span><span class="p">)</span>
+
+    <span class="n">myLabel1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">myLabel2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 <p>The rows and columns are relative to each other if you put myLabel2 into column 1 or column 5 it's in the column next to column 0. Tkinter just ignores empty columns or rows.</p>
                 
